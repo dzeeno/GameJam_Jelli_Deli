@@ -7,10 +7,17 @@ public class playermover : MonoBehaviour
 
     public Transform CurrentPos;
     //public Transform CurrentPlayer2;
+    public GameObject beats;
+    public GameObject beatPoint;
 
     public Transform pos1;
     public Transform pos2;
     public Transform pos3;
+
+    public bool isAtPos1 = false;
+    public bool isAtPos2 = false;
+    public bool isAtPos3 = false;
+
     //public Transform LookPos2;
 
 
@@ -44,6 +51,40 @@ public class playermover : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             CurrentPos = pos3;
+
+        }
+
+        if (CurrentPos = pos1) {
+            isAtPos1 = true;
+            isAtPos2 = false;
+            isAtPos3 = false;
+
+        }
+        if (CurrentPos = pos2)
+        {
+            isAtPos1 = false;
+            isAtPos2 = true;
+            isAtPos3 = false;
+        }
+        if (CurrentPos = pos3)
+        {
+            isAtPos1 = false;
+            isAtPos2 = false;
+            isAtPos3 = true;
+        }
+
+        if (isAtPos1) {
+            //choosemenuitems
+        }
+        if (isAtPos2)
+        {
+            //are you ready for the beats?
+            //yes = go to pos 3
+            //no = go to pos 1
+        }
+        if (isAtPos3) {
+
+            Instantiate(beats, beatPoint.transform.position, beatPoint.transform.rotation);
 
         }
 

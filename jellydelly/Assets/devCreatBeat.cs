@@ -5,6 +5,7 @@ using UnityEngine;
 public class devCreatBeat : MonoBehaviour
 {
     public GameObject beat;
+    bool ismade;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,13 @@ public class devCreatBeat : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
-            Instantiate(beat, this.transform.position, Quaternion.identity);
+            ismade = true;
         }
+        if (ismade)
+        {
+            Instantiate(beat, this.transform.position, this.transform.rotation);
+            ismade = false;
+        }
+
     }
 }
