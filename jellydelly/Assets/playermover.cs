@@ -14,9 +14,13 @@ public class playermover : MonoBehaviour
     public Transform pos2;
     public Transform pos3;
 
-    public bool isAtPos1 = false;
-    public bool isAtPos2 = false;
-    public bool isAtPos3 = false;
+    public bool isAtPos1;
+    public bool isAtPos2;
+    public bool isAtPos3; 
+
+    public Collider playercoll;
+
+    bool createBeats;
 
     //public Transform LookPos2;
 
@@ -36,7 +40,10 @@ public class playermover : MonoBehaviour
         CurrentPos = pos1;
 
     }
-
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) {
@@ -54,19 +61,19 @@ public class playermover : MonoBehaviour
 
         }
 
-        if (CurrentPos = pos1) {
+        if (CurrentPos == pos1) {
             isAtPos1 = true;
-            isAtPos2 = false;
-            isAtPos3 = false;
+            //isAtPos2 = false;
+            //isAtPos3 = false;
 
         }
-        if (CurrentPos = pos2)
+        if (CurrentPos == pos2)
         {
             isAtPos1 = false;
             isAtPos2 = true;
             isAtPos3 = false;
         }
-        if (CurrentPos = pos3)
+        if (CurrentPos == pos3)
         {
             isAtPos1 = false;
             isAtPos2 = false;
@@ -84,9 +91,18 @@ public class playermover : MonoBehaviour
         }
         if (isAtPos3) {
 
-            Instantiate(beats, beatPoint.transform.position, beatPoint.transform.rotation);
+            createBeats = true;
+            isAtPos3 = false;
 
         }
+        if (createBeats)
+        {
+            beats.SetActive(true);
+            playercoll.enabled = true;
+
+            createBeats = false;
+        }
+
 
 
 
