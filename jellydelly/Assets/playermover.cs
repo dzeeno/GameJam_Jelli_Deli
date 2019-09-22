@@ -72,12 +72,7 @@ public class playermover : MonoBehaviour
         //LookPos = GameObject.FindGameObjectWithTag("Player").transform;
         //CurrentPlayer = GameObject.FindGameObjectWithTag("Player").transform;
 
-        TurnSpeed = Input.GetAxis("Mouse X");
-        //print(TurnSpeed);
-        Vector3 TrailPos = CurrentPos.position + FollowPos + ShiftPos;
-        Vector3 Smoothening = Vector3.SmoothDamp(transform.position, TrailPos, ref Velocity, Smoothing * Time.deltaTime);
-
-        transform.position = Smoothening;
+       
 
 
     }
@@ -90,6 +85,13 @@ public class playermover : MonoBehaviour
         //Vector3 TrailPos = CurrentPos.transform.position + FollowPos;
         //Vector3 Smoothening = Vector3.SmoothDamp(transform.position, TrailPos, ref Velocity, Smoothing * Time.deltaTime);
         //transform.position = Smoothening;
+
+        TurnSpeed = Input.GetAxis("Mouse X");
+        //print(TurnSpeed);
+        Vector3 TrailPos = CurrentPos.position + FollowPos + ShiftPos;
+        Vector3 Smoothening = Vector3.SmoothDamp(transform.position, TrailPos, ref Velocity, Smoothing * Time.deltaTime);
+
+        transform.position = Smoothening;
 
     }
 }
