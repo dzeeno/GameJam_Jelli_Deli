@@ -82,7 +82,7 @@ public class MSACC_SettingsCameraFollow {
 
 	[Header("Movement")]
 	[Range(1,20)][Tooltip("The speed at which the camera can follow the player.")]
-	public float displacementSpeed = 3.0f;
+	public float displacementSpeed = 1.0f;
 
 	[Header("Rotation")]
 	[Tooltip("If this variable is true, the code makes a lookAt using quaternions.")]
