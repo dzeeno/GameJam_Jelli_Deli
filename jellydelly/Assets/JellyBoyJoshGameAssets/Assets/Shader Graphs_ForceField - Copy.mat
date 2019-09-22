@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ForceField
+  m_Name: Shader Graphs_ForceField - Copy
   m_Shader: {fileID: -6465566751694194690, guid: 7bb62bd8876b78b4aa679c2ab95b6d28,
     type: 3}
   m_ShaderKeywords: 
@@ -28,8 +28,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_25A6D926: 0
-    - Vector1_2DFA42D3: 0.02
-    - Vector1_3F8778FC: 1.01
+    - Vector1_2DFA42D3: 0.01
+    - Vector1_3F8778FC: 1.96
     - Vector1_C168F47F: 0
     m_Colors:
-    - Color_1639BAC: {r: 59.278778, g: 56.48554, b: 0, a: 0}
+    - Color_1639BAC: {r: 0, g: 14.754423, b: 1.5449657, a: 0}
