@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:jellydelly/Assets/Audio/Chants/Uh-haa.wav.meta
 guid: 5d0e96b169b4b8445877145fe8736086
+=======
+guid: dcf4a093e803b8b48a5f6604d0a12a65
+>>>>>>> 3e7a6454024485ee3e94950ac1d0fe1aed351090:jellydelly/Assets/Audio/Chants/Uh-haa.wav.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:jellydelly/Assets/Audio/Chants/Oh-oh-oh.wav.meta
 guid: fd92994f048eaf345bab6b03be6c6092
+=======
+guid: 5f597b0cfff80eb4dbd53e618cda9c09
+>>>>>>> 3e7a6454024485ee3e94950ac1d0fe1aed351090:jellydelly/Assets/Audio/Chants/Oh-oh-oh.wav.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
