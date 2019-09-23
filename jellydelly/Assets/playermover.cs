@@ -18,12 +18,16 @@ public class playermover : MonoBehaviour
     public Transform pos1;
     public Transform pos2;
     public Transform pos3;
+    public Transform pos4;
+
 
     public Animator anim;
 
     public bool isAtPos1;
     public bool isAtPos2;
     public bool isAtPos3;
+    public bool isAtPos4;
+
 
     public Camera fpsCam;
 
@@ -83,13 +87,18 @@ public class playermover : MonoBehaviour
             isAtPos1 = false;
             isAtPos2 = true;
             isAtPos3 = false;
+            isAtPos4 = false;
+
         }
         if (CurrentPos == pos3)
         {
             isAtPos1 = false;
             isAtPos2 = false;
             isAtPos3 = true;
+            isAtPos4 = false;
+
         }
+      
 
         if (isAtPos1) {
             //choosemenuitems
@@ -109,6 +118,9 @@ public class playermover : MonoBehaviour
             isAtPos3 = false;
             GJ_PlayerCtrl.enabled = true;
             msCameraController.changeCamera = true;
+
+            Invoke("End", 95f);
+
             //msCameraController.target = playPos.transform;
             //fpsCam.enabled = false;
             loopingSound.SetActive(false);
@@ -170,5 +182,9 @@ public class playermover : MonoBehaviour
 
         transform.position = Smoothening;
 
+    }
+    void End() {
+
+        print("End the game");
     }
 }

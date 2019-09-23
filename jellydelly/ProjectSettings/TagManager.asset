@@ -10,6 +10,7 @@ TagManager:
   - EyeMovementSpace
   - EyeSocketRight
   - Selectable
+  - end
   layers:
   - Default
   - TransparentFX
