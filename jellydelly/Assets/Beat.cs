@@ -1,11 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Beat : MonoBehaviour
 {
     public float BeatSpeed = 5f;
-    public GameObject sparks;
+    public int Score = 0;
+    public GameObject Player ;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Player = GameObject.Find("UFO_ForGameJam");
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -18,7 +26,8 @@ public class Beat : MonoBehaviour
     {
         if (Other.collider.tag == "Player")
         {
-            Instantiate(sparks, this.transform.position, this.transform.rotation);
+            Score += 10 ;
+            Player.GetComponent<GJ_PlayerCtrl>().Score += Score;
             Destroy(this.gameObject, 0f);
         }
     }
