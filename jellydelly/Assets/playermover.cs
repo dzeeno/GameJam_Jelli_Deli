@@ -6,17 +6,28 @@ public class playermover : MonoBehaviour
 {
 
     public Transform CurrentPos;
+    public GJ_PlayerCtrl GJ_PlayerCtrl;
     //public Transform CurrentPlayer2;
     public GameObject beats;
     public GameObject beatPoint;
+
+    public GameObject playPos;
+
+    public MSCameraController msCameraController;
 
     public Transform pos1;
     public Transform pos2;
     public Transform pos3;
 
+    public Animator anim;
+
     public bool isAtPos1;
     public bool isAtPos2;
-    public bool isAtPos3; 
+    public bool isAtPos3;
+
+    public Camera fpsCam;
+
+    public GameObject loopingSound;
 
     public Collider playercoll;
 
@@ -82,17 +93,26 @@ public class playermover : MonoBehaviour
 
         if (isAtPos1) {
             //choosemenuitems
+            GJ_PlayerCtrl.enabled = false;
         }
         if (isAtPos2)
         {
             //are you ready for the beats?
             //yes = go to pos 3
             //no = go to pos 1
+            anim.enabled = true;
+
         }
         if (isAtPos3) {
 
             createBeats = true;
             isAtPos3 = false;
+            GJ_PlayerCtrl.enabled = true;
+            msCameraController.changeCamera = true;
+            //msCameraController.target = playPos.transform;
+            //fpsCam.enabled = false;
+            loopingSound.SetActive(false);
+
 
         }
         if (createBeats)

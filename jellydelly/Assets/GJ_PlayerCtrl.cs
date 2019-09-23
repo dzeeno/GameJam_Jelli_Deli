@@ -13,7 +13,9 @@ public class GJ_PlayerCtrl : MonoBehaviour
 
     //private Vector2 M_look;
     //private Vector2 smoothV;
-    private float Move_Speed = 10f;
+    public float Move_Speed = 10f;
+    public float Move_SpeedV = 10f;
+
     private float moveHor ;
     private float moveVert ;
 
@@ -36,7 +38,7 @@ public class GJ_PlayerCtrl : MonoBehaviour
     private void P_Move()
     {
         float moveHor = Input.GetAxis("Mouse X") * Move_Speed;
-        float moveVert = Input.GetAxis("Mouse Y") * Move_Speed;
+        float moveVert = Input.GetAxis("Mouse Y") * Move_SpeedV;
 
         moveHor *= Time.deltaTime;
         moveVert *= Time.deltaTime ;  
