@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 44cb1c1243dae0e4da07859c1ad8aaf7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Starcruiser Italic
+  fontNames:
+  - Starcruiser Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2a29194fc84e45048a740a36036e11bb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
