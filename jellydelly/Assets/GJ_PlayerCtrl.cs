@@ -1,14 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GJ_PlayerCtrl : MonoBehaviour
 {
 	public GameObject Player ;
-    public Text ScoreTxt;
-    public GameObject ScoreObj;
-    public int Score = 0;
     //public float smoothing = 2.0f;
 
     //private Vector2 M_look;
@@ -24,15 +20,12 @@ public class GJ_PlayerCtrl : MonoBehaviour
     {
         Player = this.gameObject ;
         Cursor.visible = false ;
-        ScoreObj = GameObject.Find("Scoretext");
-        ScoreTxt = ScoreObj.GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        P_Move () ;
-        ScoreTxt.text = "SCORE: " + Score;
+        P_Move () ;  
     }
 
     private void P_Move()
