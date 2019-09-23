@@ -1,9 +1,13 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:jellydelly/Assets/Audio/Chants/Oh-oh-oh.wav.meta
-guid: fd92994f048eaf345bab6b03be6c6092
+<<<<<<< HEAD:jellydelly/Assets/Audio/Chants/yeaaah.wav.meta
+<<<<<<< HEAD
+guid: 0980e0a0a4ed9c24bad8ef9a1f416d75
 =======
-guid: 5f597b0cfff80eb4dbd53e618cda9c09
->>>>>>> 3e7a6454024485ee3e94950ac1d0fe1aed351090:jellydelly/Assets/Audio/Chants/Oh-oh-oh.wav.meta
+guid: e8a1d28cc835d1b4fbeab60d6b1bc7fb
+>>>>>>> 3e7a6454024485ee3e94950ac1d0fe1aed351090
+=======
+guid: 027ed1494de6ca142bf7a84a1bcabaec
+>>>>>>> parent of ae4840e... s:jellydelly/Assets/Audio/CollectWave1.wav.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6

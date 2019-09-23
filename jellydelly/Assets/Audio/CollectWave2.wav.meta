@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:jellydelly/Assets/Audio/Chants/Oh-oh-oh.wav.meta
+<<<<<<< HEAD:jellydelly/Assets/Audio/Chants/Oh-oh-oh.wav.meta
+guid: fd92994f048eaf345bab6b03be6c6092
+=======
+guid: 5f597b0cfff80eb4dbd53e618cda9c09
+>>>>>>> 3e7a6454024485ee3e94950ac1d0fe1aed351090:jellydelly/Assets/Audio/Chants/Oh-oh-oh.wav.meta
+=======
+guid: 8bc1ac93ddbfa424db38db3abfbf611a
+>>>>>>> parent of ae4840e... s:jellydelly/Assets/Audio/CollectWave2.wav.meta
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 0
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides:
+    4:
+      loadType: 0
+      sampleRateSetting: 0
+      sampleRateOverride: 44100
+      compressionFormat: 3
+      quality: 1
+      conversionMode: 0
+    7:
+      loadType: 0
+      sampleRateSetting: 0
+      sampleRateOverride: 44100
+      compressionFormat: 1
+      quality: 1
+      conversionMode: 0
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
