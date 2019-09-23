@@ -5,6 +5,7 @@ using UnityEngine;
 public class Beat : MonoBehaviour
 {
     public float BeatSpeed = 5f;
+    public GameObject sparks;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -17,6 +18,7 @@ public class Beat : MonoBehaviour
     {
         if (Other.collider.tag == "Player")
         {
+            Instantiate(sparks, this.transform.position, this.transform.rotation);
             Destroy(this.gameObject, 0f);
         }
     }
