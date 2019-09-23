@@ -204,6 +204,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92837390}
   m_Mesh: {fileID: -5495902117074765545, guid: 708596f643a981c449dfdce63fdbc29e, type: 3}
+--- !u!1 &154910933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154910934}
+  - component: {fileID: 154910936}
+  - component: {fileID: 154910935}
+  m_Layer: 5
+  m_Name: Scoretext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &154910934
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154910933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731514034}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 250}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &154910935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154910933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'SCORE: 0'
+--- !u!222 &154910936
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154910933}
+  m_CullTransparentMesh: 0
 --- !u!1 &562259994
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +427,105 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1007356346680893215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &731514030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731514034}
+  - component: {fileID: 731514033}
+  - component: {fileID: 731514032}
+  - component: {fileID: 731514031}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &731514031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731514030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &731514032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731514030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &731514033
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731514030}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &731514034
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731514030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 154910934}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &773158056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1203,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1263660903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263660906}
+  - component: {fileID: 1263660905}
+  - component: {fileID: 1263660904}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1263660904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263660903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1263660905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263660903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1263660906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263660903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1291395157 stripped
 MeshCollider:
   m_CorrespondingSourceObject: {fileID: 6687557725273471519, guid: ae8b78e2b27af17458a72942f419f5fb,
@@ -1233,6 +1475,626 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5165052131522988953, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7425892069588719522, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5393210672791356389, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1918972078567148659, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4778170598564205125, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5010675634578395899, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7781766663350752430, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2843118895536212848, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 9131192497366936838, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1809987936677148923, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7248943262353523426, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 392414799592406477, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8719028734892272600, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2077279021774497008, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 3092805960995477572, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5975798208421245052, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6708970126727286801, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8868214918124703329, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 301774671042568941, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2162046322173615120, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8366793805880164829, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2613097948283233301, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6045436108398449448, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1990920587815150644, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6406620563806237004, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4563234707010265301, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5335700135934693969, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 9203238605272896795, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 3828597252981153473, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5905828484348713855, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5572516176888086891, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 3836245384175800072, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8320740783588348333, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6821393832012818859, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 3555949011644406636, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 204861802280929905, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5637214918688332124, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 3033308306650258959, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8641056747397010719, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8530048014978161966, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6955302990958730254, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4381090956302403657, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2418850270120513115, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1098378955986095688, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2613918960670980090, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 9123760418972484796, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1400134979288443207, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4255608270608881669, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5012495408926399283, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4243498729017067816, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 112918234837979812, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 718284297158850577, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2045039364303346103, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7735717738091650939, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2967442376419363564, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4418048297112697086, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4024581482745576116, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4449905830881387313, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7975792366295460089, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7201593034301853750, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2674378096737825600, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7829501447380384146, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8749925579982912109, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6008157355323000488, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5272312258715520916, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8577044716402099539, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1046939347995108182, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2782890277067987500, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7133887359799809138, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 191476757350648659, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7446037585605870100, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2885381971507486586, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1470720021903574199, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4895240880300282961, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 102201024490335611, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8801296972712371353, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 839084263815069396, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 9116968482950310429, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6171816989190090448, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1814476392811182477, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1815309469761878729, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6837060372847157874, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2301857651785824139, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 370922563676664618, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6259787433080543812, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 364971640786522899, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4470329640457746275, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4036776675494407281, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 9140134742311375012, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7547284448941328988, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6144390721842052772, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6137813702826512310, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 9032219352122485258, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5105366336170226070, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5447285878183206052, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1857767638857078967, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 70068418968780442, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7050520120204904192, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 14849651808688196, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4071165522371075338, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7059809450839529491, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4150537882649408117, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 3882153630540279116, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2330222586255182545, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1475602315828643541, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5599108720492477414, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 2337586648792793510, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 3609319686458810192, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8493497215715148239, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 6913516621955956431, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8372150099603013348, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5133761818356692897, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5695383408892309768, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 8623744622535570223, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1794979619527065322, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 7744797403094299998, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4640907297037877690, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4106851637320313825, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 847325421044431015, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5777497357624314715, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4753111398266162759, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 1337084787966225553, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 5833051698412898841, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
+    - target: {fileID: 4616892273482939579, guid: e153395cc7877f541a6d9bb2c59e31ae,
+        type: 3}
+      propertyPath: ScoreTxt
+      value: 
+      objectReference: {fileID: 154910935}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e153395cc7877f541a6d9bb2c59e31ae, type: 3}
 --- !u!1 &1940514770
@@ -2592,6 +3454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UFO_ForGameJam
       objectReference: {fileID: 0}
+    - target: {fileID: 6687557725273471519, guid: ae8b78e2b27af17458a72942f419f5fb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4267362445366124577, guid: ae8b78e2b27af17458a72942f419f5fb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2687,11 +3554,6 @@ PrefabInstance:
       propertyPath: cameras.Array.data[1]._camera
       value: 
       objectReference: {fileID: 723501316}
-    - target: {fileID: 6687557725273471519, guid: ae8b78e2b27af17458a72942f419f5fb,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3658347657733777385, guid: ae8b78e2b27af17458a72942f419f5fb,
         type: 3}
       propertyPath: CurrentPos
