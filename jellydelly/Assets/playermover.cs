@@ -6,17 +6,32 @@ public class playermover : MonoBehaviour
 {
 
     public Transform CurrentPos;
+    public GJ_PlayerCtrl GJ_PlayerCtrl;
     //public Transform CurrentPlayer2;
     public GameObject beats;
     public GameObject beatPoint;
+
+    public GameObject playPos;
+
+    public MSCameraController msCameraController;
 
     public Transform pos1;
     public Transform pos2;
     public Transform pos3;
 
-    public bool isAtPos1 = false;
-    public bool isAtPos2 = false;
-    public bool isAtPos3 = false;
+    public Animator anim;
+
+    public bool isAtPos1;
+    public bool isAtPos2;
+    public bool isAtPos3;
+
+    public Camera fpsCam;
+
+    public GameObject loopingSound;
+
+    public Collider playercoll;
+
+    bool createBeats;
 
     //public Transform LookPos2;
 
@@ -36,7 +51,10 @@ public class playermover : MonoBehaviour
         CurrentPos = pos1;
 
     }
-
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) {
@@ -54,19 +72,19 @@ public class playermover : MonoBehaviour
 
         }
 
-        if (CurrentPos = pos1) {
+        if (CurrentPos == pos1) {
             isAtPos1 = true;
-            isAtPos2 = false;
-            isAtPos3 = false;
+            //isAtPos2 = false;
+            //isAtPos3 = false;
 
         }
-        if (CurrentPos = pos2)
+        if (CurrentPos == pos2)
         {
             isAtPos1 = false;
             isAtPos2 = true;
             isAtPos3 = false;
         }
-        if (CurrentPos = pos3)
+        if (CurrentPos == pos3)
         {
             isAtPos1 = false;
             isAtPos2 = false;
@@ -75,18 +93,36 @@ public class playermover : MonoBehaviour
 
         if (isAtPos1) {
             //choosemenuitems
+            GJ_PlayerCtrl.enabled = false;
         }
         if (isAtPos2)
         {
             //are you ready for the beats?
             //yes = go to pos 3
             //no = go to pos 1
+            anim.enabled = true;
+
         }
         if (isAtPos3) {
 
-            Instantiate(beats, beatPoint.transform.position, beatPoint.transform.rotation);
+            createBeats = true;
+            isAtPos3 = false;
+            GJ_PlayerCtrl.enabled = true;
+            msCameraController.changeCamera = true;
+            //msCameraController.target = playPos.transform;
+            //fpsCam.enabled = false;
+            loopingSound.SetActive(false);
+
 
         }
+        if (createBeats)
+        {
+            beats.SetActive(true);
+            playercoll.enabled = true;
+
+            createBeats = false;
+        }
+
 
 
 

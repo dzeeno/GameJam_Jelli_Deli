@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4267362445366124577}
   - component: {fileID: 964876773432300094}
+  - component: {fileID: 8139472583573065317}
   - component: {fileID: 964876773432300093}
   - component: {fileID: 964876773432300092}
   - component: {fileID: 964876773432300095}
@@ -51,6 +52,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 36.77
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8139472583573065317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964876773432300082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a96631c4d5d984495db169c8347219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectabletag: Selectable
+  selectedMat: {fileID: 2100000, guid: 3418262cd6f4aa54caa2b88aa784ad71, type: 2}
+  normalMat: {fileID: 2100000, guid: bee09fdef34002946b510bd00654cc27, type: 2}
 --- !u!114 &964876773432300093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,9 +80,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentPos: {fileID: 0}
+  GJ_PlayerCtrl: {fileID: 0}
+  beats: {fileID: 0}
+  beatPoint: {fileID: 0}
+  playPos: {fileID: 0}
+  msCameraController: {fileID: 0}
   pos1: {fileID: 0}
   pos2: {fileID: 0}
   pos3: {fileID: 0}
+  anim: {fileID: 0}
+  isAtPos1: 0
+  isAtPos2: 0
+  isAtPos3: 0
+  fpsCam: {fileID: 0}
+  loopingSound: {fileID: 0}
+  playercoll: {fileID: 0}
   Smoothing: 75
   FollowPos: {x: 0, y: 0, z: 0}
   ShiftPos: {x: 0, y: 0, z: 0}
@@ -170,6 +198,7 @@ MonoBehaviour:
       movementSpeed: 20
       invertXInput: 0
       invertYInput: 0
+  changeCamera: 0
   _horizontalInputMSACC: 0
   _verticalInputMSACC: 0
   _scrollInputMSACC: 0
@@ -188,6 +217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 964876773432300082}
+  Move_Speed: 10
+  Move_SpeedV: 10
 --- !u!1 &3658347657733777388
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,9 +378,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentPos: {fileID: 0}
+  GJ_PlayerCtrl: {fileID: 0}
+  beats: {fileID: 0}
+  beatPoint: {fileID: 0}
+  playPos: {fileID: 0}
+  msCameraController: {fileID: 0}
   pos1: {fileID: 0}
   pos2: {fileID: 0}
   pos3: {fileID: 0}
+  anim: {fileID: 0}
+  isAtPos1: 0
+  isAtPos2: 0
+  isAtPos3: 0
+  fpsCam: {fileID: 0}
+  loopingSound: {fileID: 0}
+  playercoll: {fileID: 0}
   Smoothing: 75
   FollowPos: {x: 0, y: 0, z: 0}
   ShiftPos: {x: 0, y: 0, z: 0}

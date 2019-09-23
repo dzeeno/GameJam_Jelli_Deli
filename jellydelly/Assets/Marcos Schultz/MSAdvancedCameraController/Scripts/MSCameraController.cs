@@ -243,6 +243,8 @@ public class MSCameraController : MonoBehaviour {
 	[Tooltip("Here you can configure the cameras, deciding their speed of movement, rotation, zoom, among other options.")]
 	public MSACC_CameraSetting CameraSettings;
 
+    public bool changeCamera;
+
 	bool orbitalAtiv;
 	bool orbital_AtivTemp;
 	float rotacX = 0.0f;
@@ -825,7 +827,7 @@ public class MSCameraController : MonoBehaviour {
 		//camera switch key
 		if (!_enableMobileInputs) {
 			if (Time.timeScale > 0) {
-				if (Input.GetKeyDown (CameraSettings.cameraSwitchKey) && index < (cameras.Length - 1)) {
+				if (/*Input.GetKeyDown (CameraSettings.cameraSwitchKey)*/changeCamera && index < (cameras.Length - 1)) {
 					lastIndex = index;
 					index++;
 					EnableCameras (index);
